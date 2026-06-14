@@ -31,40 +31,33 @@ font-size:30px;
 text-decoration:none;
 box-shadow:0 2px 10px rgba(0,0,0,0.3);
 }
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-padding:40px;
-max-width:1200px;
-margin:0 auto;
-}
-
 .gallery-item{
-background:#ffffff;
-border-radius:12px;
-padding:20px;
-text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-border:1px solid #e5e5e5;
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    border:1px solid #eee;
 }
 
 .gallery-item img{
-width:220px !important;
-height:220px !important;
-max-width:220px !important;
-max-height:220px !important;
-object-fit:contain !important;
-display:block;
-margin:0 auto 15px auto;
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
 }
 
 .gallery-item h3{
-margin-top:10px;
-font-size:18px;
+    margin:15px 0;
+    color:#7a0000;
 }
 
-.gallery-item:hover{
-transform:translateY(-5px);
-transition:0.3s;
+.gallery-item .btn{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:5px;
 }
