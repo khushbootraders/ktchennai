@@ -148,3 +148,37 @@ margin:0;
 font-size:32px;
 font-weight:bold;
 }
+.brand h1{
+    margin:0;
+    color:white;
+    font-size:32px;
+    line-height:1.1;
+}
+
+.brand span{
+    color:#f5d28b;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+header{
+    background:#7a0000;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
