@@ -1,3 +1,68 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f8f8f8;
+}
+
+/* Header */
+
+header{
+background:#7a0000;
+padding:10px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+height:90px;
+width:auto;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+font-size:16px;
+}
+
+nav a:hover
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:white;
+}
+
+.hero h1{
+color:#7a0000;
+}
+
+/* Buttons */
+
+.btn{
+display:inline-block;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:5px;
+}
+
+/* About Section */
+
+.about-preview{
+text-align:center;
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* Products */
+
 .products{
 display:flex;
 flex-wrap:wrap;
@@ -15,6 +80,42 @@ text-align:center;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 background:white;
 }
+
+/* Gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:40px;
+max-width:1200px;
+margin:auto;
+}
+
+.gallery-item{
+background:#fff;
+border-radius:15px;
+padding:20px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+border:1px solid #eee;
+}
+
+.gallery-item img{
+width:180px;
+height:180px;
+object-fit:contain;
+display:block;
+margin:auto;
+}
+
+.gallery-item h3{
+margin:15px 0;
+color:#7a0000;
+}
+
+/* WhatsApp */
+
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -31,33 +132,13 @@ font-size:30px;
 text-decoration:none;
 box-shadow:0 2px 10px rgba(0,0,0,0.3);
 }
-.gallery-item{
-    background:#fff;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
-    border:1px solid #eee;
-}
 
-.gallery-item img{
-    width:180px;
-    height:180px;
-    object-fit:contain;
-    display:block;
-    margin:auto;
-}
+/* Footer */
 
-.gallery-item h3{
-    margin:15px 0;
-    color:#7a0000;
-}
-
-.gallery-item .btn{
-    display:inline-block;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:10px 18px;
-    border-radius:5px;
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
