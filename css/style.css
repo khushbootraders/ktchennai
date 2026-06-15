@@ -427,48 +427,76 @@ PREMIUM GALLERY BUTTONS
 .filter-buttons{
     display:flex;
     justify-content:center;
+    align-items:center;
     flex-wrap:wrap;
     gap:15px;
-    margin:10px auto 40px;
+    margin:20px auto 40px;
     max-width:1200px;
+    padding:0 20px;
 }
 
 .filter-btn{
     padding:12px 24px;
     border:none;
     border-radius:30px;
-    background:white;
+    background:#ffffff;
     color:#7a0000;
     font-size:15px;
     font-weight:700;
     cursor:pointer;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
-    transition:.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
 }
 
 .filter-btn:hover{
     background:#7a0000;
-    color:white;
+    color:#ffffff;
     transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
 .filter-btn.active{
     background:#7a0000;
-    color:white;
+    color:#ffffff;
 }
 
 .gallery{
-    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:20px auto;
+    padding:20px;
 }
 
 .gallery-item{
+    background:#ffffff;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
     overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+.gallery-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
 }
 
 .gallery-item img{
-    transition:.4s;
+    width:240px;
+    height:240px;
+    object-fit:contain;
+    transition:transform 0.4s ease;
 }
 
 .gallery-item:hover img{
     transform:scale(1.05);
+}
+
+.gallery-item h3{
+    color:#7a0000;
+    margin-top:15px;
+    margin-bottom:15px;
 }
