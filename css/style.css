@@ -126,17 +126,17 @@ nav a:hover{
 
 .gallery-item{
     background:white;
-    border-radius:15px;
-    padding:25px;
+    border-radius:18px;
+    padding:30px;
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    transition:0.3s;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
 }
 
 .gallery-item:hover{
-    transform:translateY(-5px);
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
-
 .gallery-item img{
     width:220px;
     height:220px;
