@@ -71,38 +71,21 @@ HERO
 }
 
 .hero h1{
-    font-size:52px;
-    margin-bottom:20px;
+    font-size:54px;
+    margin:0 auto 20px;
+    max-width:1000px;
+    color:white;
 }
 
 .hero p{
     font-size:22px;
     margin-bottom:30px;
-}
-
-background-size:cover;
-background-position:center;
-
-color:white;
-text-align:center;
-padding:120px 20px;
-
-}
-
-.hero h1{
-font-size:52px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
+    color:white;
 }
 
 .hero .btn{
-margin:8px;
+    margin:10px;
 }
-
 /* =========================
 PAGE TITLES
 ========================= */
