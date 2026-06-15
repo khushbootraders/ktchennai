@@ -138,8 +138,8 @@ nav a:hover{
     box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 .gallery-item img{
-    width:220px;
-    height:220px;
+    width:250px;
+    height:250px;
     object-fit:contain;
 }
 
@@ -234,9 +234,21 @@ footer{
         font-size:34px;
     }
 
-    .about-preview h1{
-        font-size:32px;
-    }
+    .about-preview{
+    text-align:center;
+    padding:60px 20px 20px;
+}
+
+.about-preview h1{
+    font-size:58px;
+    color:#7a0000;
+    margin-bottom:10px;
+}
+
+.about-preview p{
+    font-size:22px;
+    color:#555;
+}
 
     .gallery-item img{
         width:180px;
