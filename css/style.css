@@ -36,12 +36,14 @@ header{
     font-weight:700;
     line-height:1;
 }
-.brand span{
-color:#ffd88a;
-font-size:16px;
-font-weight:500;
-}
 
+.brand span{
+    color:#ffd88a;
+    font-size:16px;
+    font-weight:500;
+    display:block;
+    margin-top:5px;
+}
 nav a{
     color:white;
     text-decoration:none;
