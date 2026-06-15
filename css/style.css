@@ -337,3 +337,45 @@ footer a:hover{
 .about-card p{
     line-height:1.7;
 }
+
+```css
+.contact-container{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+}
+
+.contact-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.contact-card h2{
+    color:#7a0000;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.contact-card p{
+    line-height:1.7;
+}
+
+.contact-map{
+    background:white;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+@media(max-width:768px){
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+}
