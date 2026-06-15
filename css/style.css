@@ -24,30 +24,28 @@ box-shadow:0 2px 12px rgba(0,0,0,0.15);
 }
 
 .brand{
-display:flex;
-align-items:center;
-gap:15px;
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
 .header-logo{
-width:55px;
-height:55px;
-object-fit:contain;
-border-radius:8px;
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    border-radius:6px;
 }
 
 .brand h1{
-margin:0;
-color:white;
-font-size:24px;
-font-weight:700;
+    margin:0;
+    color:white;
+    font-size:22px;
 }
 
 .brand span{
-color:#f7d27b;
-font-size:13px;
+    color:#f7d27b;
+    font-size:14px;
 }
-
 nav a{
 color:white;
 text-decoration:none;
