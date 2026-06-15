@@ -2,8 +2,13 @@
 GLOBAL
 ========================= */
 
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:Arial, sans-serif;
     background:#f5f5f5;
     color:#333;
@@ -21,6 +26,9 @@ header{
     align-items:center;
     padding:18px 50px;
     box-shadow:0 2px 12px rgba(0,0,0,0.15);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .brand{
@@ -37,7 +45,6 @@ header{
 }
 
 .brand h1{
-    margin:0;
     color:white;
     font-size:28px;
     font-weight:700;
@@ -66,32 +73,44 @@ HERO SECTION
 ========================= */
 
 .hero{
-    background:#7a0000;
-    color:white;
+    background:
+    linear-gradient(rgba(122,0,0,0.72),rgba(122,0,0,0.72)),
+    url('../images/hero-banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+
     text-align:center;
-    padding:120px 20px;
+    padding:130px 20px;
+    color:white;
 }
 
 .hero h1{
-    font-size:56px;
+    font-size:60px;
     max-width:1000px;
-    margin:0 auto 20px;
-    color:white;
+    margin:auto;
+    margin-bottom:20px;
     font-weight:700;
+    color:white;
 }
 
 .hero p{
-    font-size:22px;
-    margin-bottom:30px;
+    font-size:24px;
     color:white;
+    margin-bottom:35px;
 }
+
+.hero .btn{
+    margin:8px;
+}
+
 /* =========================
 BUTTONS
 ========================= */
 
 .btn{
     display:inline-block;
-    padding:12px 25px;
+    padding:13px 28px;
     background:#25D366;
     color:white;
     text-decoration:none;
@@ -102,17 +121,18 @@ BUTTONS
 
 .btn:hover{
     transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
 }
 
 /* =========================
-PAGE HEADINGS
+PAGE SECTIONS
 ========================= */
 
 .about-preview{
+    text-align:center;
     max-width:1000px;
     margin:auto;
     padding:60px 20px;
-    text-align:center;
 }
 
 .about-preview h1{
@@ -123,11 +143,15 @@ PAGE HEADINGS
 
 .about-preview h2{
     color:#7a0000;
+    font-size:38px;
     margin-bottom:20px;
 }
 
 .about-preview p{
+    max-width:800px;
+    margin:15px auto;
     font-size:18px;
+    line-height:1.8;
 }
 
 /* =========================
@@ -145,7 +169,7 @@ PRODUCTS
 }
 
 .card{
-    width:250px;
+    width:260px;
     background:white;
     padding:25px;
     border-radius:15px;
@@ -160,6 +184,7 @@ PRODUCTS
 
 .card h3{
     color:#7a0000;
+    margin-bottom:10px;
 }
 
 /* =========================
@@ -197,6 +222,7 @@ GALLERY
 
 .gallery-item h3{
     color:#7a0000;
+    margin-top:15px;
 }
 
 /* =========================
@@ -229,27 +255,27 @@ ABOUT PAGE
     color:#7a0000;
 }
 
+/* =========================
+GOOGLE REVIEW SECTION
+========================= */
+
 .company-info{
     background:white;
     max-width:850px;
-    margin:50px auto;
-    padding:30px;
+    margin:30px auto;
+    padding:40px;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-.company-info h2{
+.company-info h2,
+.company-info h3{
     color:#7a0000;
-    text-align:center;
+    margin-bottom:15px;
 }
 
-.company-info ul{
-    list-style:none;
-    padding:0;
-}
-
-.company-info li{
-    padding:10px 0;
+.company-info p{
+    margin-bottom:15px;
 }
 
 /* =========================
@@ -324,6 +350,10 @@ footer{
     margin-top:60px;
 }
 
+footer p{
+    margin-bottom:10px;
+}
+
 footer a{
     color:#ffd700;
     text-decoration:none;
@@ -342,6 +372,11 @@ MOBILE
     header{
         flex-direction:column;
         text-align:center;
+        padding:15px;
+    }
+
+    .brand{
+        flex-direction:column;
     }
 
     nav{
@@ -353,16 +388,24 @@ MOBILE
         margin:8px;
     }
 
-    .brand{
-        flex-direction:column;
+    .hero{
+        padding:90px 15px;
     }
 
     .hero h1{
         font-size:34px;
     }
 
+    .hero p{
+        font-size:18px;
+    }
+
     .about-preview h1{
-        font-size:38px;
+        font-size:36px;
+    }
+
+    .about-preview h2{
+        font-size:28px;
     }
 
     .gallery-item img{
