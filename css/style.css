@@ -18,31 +18,22 @@ header{
 
 .brand{
     display:flex;
-    align-items:center;
+    flex-direction:column;
+    justify-content:center;
 }
 
-.header-logo{
-    width:60px;
-    height:60px;
-    object-fit:contain;
-    margin-right:15px;
-}
-
-.brand h1,
-.brand h2{
+.brand h1{
     margin:0;
-    color:#ffffff !important;
-    font-size:42px;
+    color:white;
+    font-size:24px;
     font-weight:700;
-    line-height:1;
+    line-height:1.2;
 }
 
 .brand span{
-    color:#ffd88a;
-    font-size:16px;
-    font-weight:500;
-    display:block;
-    margin-top:5px;
+    margin-top:4px;
+    color:#f7d27b;
+    font-size:13px;
 }
 nav a{
     color:white;
