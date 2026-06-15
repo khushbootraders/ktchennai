@@ -1,9 +1,18 @@
 /* =========================
+RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
 GLOBAL
 ========================= */
 
 body{
-    margin:0;
     font-family:Arial, sans-serif;
     background:#f5f5f5;
     color:#333;
@@ -37,10 +46,9 @@ header{
 }
 
 .brand h1{
+    color:#fff;
+    font-size:32px;
     margin:0;
-    color:white;
-    font-size:28px;
-    font-weight:700;
 }
 
 .brand span{
@@ -49,11 +57,11 @@ header{
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
     margin-left:25px;
-    font-size:16px;
     font-weight:bold;
+    font-size:16px;
     transition:0.3s;
 }
 
@@ -66,35 +74,49 @@ HERO SECTION
 ========================= */
 
 .hero{
-    background:#7a0000;
-    color:white;
+    background:
+    linear-gradient(rgba(122,0,0,0.75),rgba(122,0,0,0.75)),
+    url('../images/hero-banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
     text-align:center;
-    padding:120px 20px;
+    color:white;
+
+    padding:140px 20px;
 }
 
 .hero h1{
-    font-size:56px;
-    max-width:1000px;
-    margin:0 auto 20px;
+    font-size:64px;
+    margin-bottom:20px;
     color:white;
-    font-weight:700;
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .hero p{
-    font-size:22px;
-    margin-bottom:30px;
+    font-size:24px;
+    margin-bottom:35px;
     color:white;
 }
+
+.hero .btn{
+    margin:8px;
+}
+
 /* =========================
 BUTTONS
 ========================= */
 
 .btn{
     display:inline-block;
-    padding:12px 25px;
     background:#25D366;
     color:white;
     text-decoration:none;
+    padding:13px 28px;
     border-radius:8px;
     font-weight:bold;
     transition:0.3s;
@@ -102,17 +124,18 @@ BUTTONS
 
 .btn:hover{
     transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* =========================
-PAGE HEADINGS
+SECTION HEADINGS
 ========================= */
 
 .about-preview{
+    text-align:center;
     max-width:1000px;
     margin:auto;
     padding:60px 20px;
-    text-align:center;
 }
 
 .about-preview h1{
@@ -123,11 +146,15 @@ PAGE HEADINGS
 
 .about-preview h2{
     color:#7a0000;
+    font-size:40px;
     margin-bottom:20px;
 }
 
 .about-preview p{
     font-size:18px;
+    line-height:1.8;
+    max-width:850px;
+    margin:15px auto;
 }
 
 /* =========================
@@ -145,7 +172,7 @@ PRODUCTS
 }
 
 .card{
-    width:250px;
+    width:260px;
     background:white;
     padding:25px;
     border-radius:15px;
@@ -160,6 +187,34 @@ PRODUCTS
 
 .card h3{
     color:#7a0000;
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
+
+/* =========================
+GOOGLE REVIEW CARD
+========================= */
+
+.company-info{
+    background:white;
+    max-width:800px;
+    margin:30px auto;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.company-info h2,
+.company-info h3{
+    color:#7a0000;
+    margin-bottom:15px;
+}
+
+.company-info p{
+    margin-bottom:15px;
 }
 
 /* =========================
@@ -197,17 +252,12 @@ GALLERY
 
 .gallery-item h3{
     color:#7a0000;
+    margin-top:15px;
 }
 
 /* =========================
 ABOUT PAGE
 ========================= */
-
-.about-intro{
-    max-width:900px;
-    margin:auto;
-    font-size:18px;
-}
 
 .about-content{
     display:grid;
@@ -227,29 +277,7 @@ ABOUT PAGE
 
 .about-card h3{
     color:#7a0000;
-}
-
-.company-info{
-    background:white;
-    max-width:850px;
-    margin:50px auto;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
-
-.company-info h2{
-    color:#7a0000;
-    text-align:center;
-}
-
-.company-info ul{
-    list-style:none;
-    padding:0;
-}
-
-.company-info li{
-    padding:10px 0;
+    margin-bottom:15px;
 }
 
 /* =========================
@@ -275,6 +303,7 @@ CONTACT PAGE
 
 .contact-card h2{
     color:#7a0000;
+    margin-bottom:15px;
 }
 
 .contact-map{
@@ -302,12 +331,12 @@ WHATSAPP FLOAT
     height:60px;
     background:#25D366;
     color:white;
-    text-decoration:none;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:28px;
+    text-decoration:none;
+    font-size:30px;
     box-shadow:0 5px 20px rgba(0,0,0,0.25);
     z-index:999;
 }
@@ -320,8 +349,12 @@ footer{
     background:#111;
     color:white;
     text-align:center;
-    padding:35px 20px;
+    padding:40px 20px;
     margin-top:60px;
+}
+
+footer p{
+    margin-bottom:10px;
 }
 
 footer a{
@@ -342,6 +375,11 @@ MOBILE
     header{
         flex-direction:column;
         text-align:center;
+        padding:20px;
+    }
+
+    .brand{
+        flex-direction:column;
     }
 
     nav{
@@ -353,16 +391,24 @@ MOBILE
         margin:8px;
     }
 
-    .brand{
-        flex-direction:column;
+    .hero{
+        padding:90px 20px;
     }
 
     .hero h1{
-        font-size:34px;
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:18px;
     }
 
     .about-preview h1{
-        font-size:38px;
+        font-size:36px;
+    }
+
+    .about-preview h2{
+        font-size:30px;
     }
 
     .gallery-item img{
