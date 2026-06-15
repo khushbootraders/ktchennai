@@ -338,7 +338,7 @@ footer a:hover{
     line-height:1.7;
 }
 
-```css
+
 .contact-container{
     max-width:1200px;
     margin:50px auto;
@@ -353,6 +353,8 @@ footer a:hover{
     padding:35px;
     border-radius:20px;
     box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    text-align:center;   /* Center everything */
 }
 
 .contact-card h2{
@@ -363,8 +365,8 @@ footer a:hover{
 
 .contact-card p{
     line-height:1.7;
+    margin-bottom:15px;
 }
-
 .contact-map{
     background:white;
     padding:15px;
