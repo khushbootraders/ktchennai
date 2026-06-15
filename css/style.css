@@ -420,3 +420,55 @@ MOBILE
         grid-template-columns:1fr;
     }
 }
+/* =========================
+PREMIUM GALLERY BUTTONS
+========================= */
+
+.filter-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:10px auto 40px;
+    max-width:1200px;
+}
+
+.filter-btn{
+    padding:12px 24px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#7a0000;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.filter-btn:hover{
+    background:#7a0000;
+    color:white;
+    transform:translateY(-3px);
+}
+
+.filter-btn.active{
+    background:#7a0000;
+    color:white;
+}
+
+.gallery{
+    margin-top:20px;
+}
+
+.gallery-item{
+    overflow:hidden;
+}
+
+.gallery-item img{
+    transition:.4s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+}
