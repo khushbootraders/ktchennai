@@ -641,3 +641,22 @@ html{
     border-radius:8px;
     font-size:15px;
 }
+.video-section{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.video-section h2{
+    color:#7a0000;
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+.video-section video{
+    width:100%;
+    max-width:1000px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
