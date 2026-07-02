@@ -690,3 +690,74 @@ NEWS TICKER
         transform:translateX(-100%);
     }
 }
+
+/* =====================================
+FEATURED PRODUCT SLIDER
+===================================== */
+
+.featured-products{
+    padding:70px 20px;
+    background:#fff;
+}
+
+.featured-products h2{
+    text-align:center;
+    font-size:42px;
+    color:#7a0000;
+    margin-bottom:45px;
+}
+
+.product-slider{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.slider-track{
+    display:flex;
+    width:max-content;
+    animation:scrollProducts 35s linear infinite;
+}
+
+.slide{
+    width:260px;
+    background:#fff;
+    margin:0 15px;
+    border-radius:18px;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    flex-shrink:0;
+}
+
+.slide:hover{
+    transform:translateY(-8px);
+}
+
+.slide img{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+}
+
+.slide h3{
+    color:#7a0000;
+    margin-top:20px;
+}
+
+@keyframes scrollProducts{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(-50%);
+    }
+
+}
+
+.product-slider:hover .slider-track{
+    animation-play-state:paused;
+}
